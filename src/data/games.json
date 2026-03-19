@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Elden Ring",
+    "platform": "playstation",
+    "genre": "rpg",
+    "price": 59.99,
+    "stock": 10,
+    "description": "Levántate, Sinluz, y déjate guiar por la gracia para esgrimir el poder del Círculo de Elden.",
+    "image": "assets/Elden-Ring.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Halo Infinite",
+    "platform": "xbox",
+    "genre": "shooter",
+    "price": 49.99,
+    "stock": 5,
+    "description": "Cuando toda esperanza se ha perdido, el Jefe Maestro está listo para enfrentarse al enemigo más despiadado.",
+    "image": "assets/Halo-Infinite.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Cyberpunk 2077",
+    "platform": "steam",
+    "genre": "rpg",
+    "price": 39.99,
+    "stock": 15,
+    "description": "Una historia de aventura y acción de mundo abierto ambientada en Night City.",
+    "image": "assets/Cyberpunk-2077.jpg"
+  },
+  {
+    "id": 4,
+    "title": "God of War Ragnarök",
+    "platform": "playstation",
+    "genre": "aventura",
+    "price": 69.99,
+    "stock": 8,
+    "description": "Kratos y Atreus deben viajar a cada uno de los nueve reinos en busca de respuestas.",
+    "image": "assets/God-of-War-Ragnarok.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Forza Horizon 5",
+    "platform": "xbox",
+    "genre": "carreras",
+    "price": 54.99,
+    "stock": 12,
+    "description": "Tu aventura Horizon definitiva te espera. Explora los paisajes de México en constante evolución.",
+    "image": "assets/Forza-Horizon-5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Hades",
+    "platform": "steam",
+    "genre": "roguelike",
+    "price": 24.99,
+    "stock": 20,
+    "description": "Desafía al dios de los muertos mientras te abres paso a codazos fuera del Inframundo.",
+    "image": "assets/Hades.jpg"
+  },
+  {
+    "id": 7,
+    "title": "The Last of Us Part II",
+    "platform": "playstation",
+    "genre": "aventura",
+    "price": 39.99,
+    "stock": 7,
+    "description": "Cinco años después de su peligroso viaje, Ellie y Joel se han asentado en Jackson, Wyoming.",
+    "image": "assets/The-Last-of-Us-Part-II.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Gears 5",
+    "platform": "xbox",
+    "genre": "shooter",
+    "price": 29.99,
+    "stock": 9,
+    "description": "El mundo se desmorona. La dependencia de la humanidad de la tecnología ha sido su caída.",
+    "image": "assets/Gears-5.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Stardew Valley",
+    "platform": "steam",
+    "genre": "simulacion",
+    "price": 14.99,
+    "stock": 30,
+    "description": "Has heredado la vieja parcela agrícola de tu abuelo en Stardew Valley.",
+    "image": "assets/Stardew-Valley.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Spider-Man 2",
+    "platform": "playstation",
+    "genre": "accion",
+    "price": 69.99,
+    "stock": 6,
+    "description": "Los Spider-Men Peter Parker y Miles Morales regresan para una nueva y emocionante aventura.",
+    "image": "assets/Spider-Man-2.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Sea of Thieves",
+    "platform": "xbox",
+    "genre": "aventura",
+    "price": 39.99,
+    "stock": 14,
+    "description": "Sea of Thieves ofrece la experiencia de piratas definitiva, desde navegar y luchar hasta explorar y saquear.",
+    "image": "assets/Sea-of-Thieves.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Counter-Strike 2",
+    "platform": "steam",
+    "genre": "shooter",
+    "price": 0.0,
+    "stock": 100,
+    "description": "Durante más de dos décadas, Counter-Strike ha brindado una experiencia competitiva de élite.",
+    "image": "assets/Counter-Strike-2.jpg"
+  }
+]
