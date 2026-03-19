@@ -10,7 +10,7 @@ function ItemDetailContainer() {
 
     useEffect(()=>{
         setLoading(true);
-        getGamesbyId(idGame)
+        getGamesbyId(idItem)
             .then ((respose)=>setGame(respose))
             .catch((error)=>{console.error('Error: ', error)})
             .finally(()=>{setLoading(false)})

@@ -19,9 +19,42 @@
     align-items: center;
 }
 
-a.carrito {
+/* Carrito de la compra*/
+.cart-widget {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cart-widget:hover {
+    transform: scale(1.1);
+}
+
+.cart-icon-container {
+    position: relative;
     font-size: 1.5rem;
 }
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #00a1f1;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1a1a1a;
+}
+
+/* Sub Barra de categorias*/
 
 .category-bar {
     background-color: #111115;

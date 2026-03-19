@@ -1,7 +1,18 @@
+import { useState } from 'react';
+import { useCart } from '../context/CartContext';
+import { Link } from 'react-router-dom';
+import ItemCount from './ItemCount';
 import '../css/cardDetail.css'
 
 function ItemDetail({item}){
-    console.log("Datos del juego en detalle:", item);
+    const [quantityAdded, setQuantityAdded] = useState(0);
+    const { addItem } = useCart();
+
+    const handleOnAdd = (quantity) => {
+            setQuantityAdded(quantity);
+            addItem(item, quantity);
+        };
+
     return(
         <div className="detail-layout">
         <div className="detail-img-container">
@@ -12,8 +23,18 @@ function ItemDetail({item}){
             <h1 className="detail-title">{item.title}</h1>
             <p className="detail-description">{item.description}</p>
             <p className="detail-price">$ {item.price}</p>
-            <button className="btn-buy">Añadir al carrito</button>
+            <div className="detail-footer">{
+                quantityAdded > 0 ? (
+                <Link to="/cart" className="btn-buy" style={{textAlign: 'center', textDecoration: 'none', display: 'block'}}>Terminar mi compra</Link>)
+                : (<ItemCount
+                    stock={item.stock}
+                    initial={1}
+                    onAdd={handleOnAdd}
+                    />
+                )}
+            </div>
         </div>
+
     </div>
     );
 }

@@ -1,7 +1,10 @@
 import { createContext, useState, useContext } from "react";
 
 export const CartContext = createContext();
-export const usecart = useContext(CartContext);
+export const useCart = ()=>{
+    const context = useContext(CartContext)
+    return context;
+};
 
 //provider del carrito
 export const CartProvider = ({children})=>{
@@ -9,7 +12,7 @@ export const CartProvider = ({children})=>{
 
 // funcin para agregar al carrito
 
-    const addCart = (item, quantity)=>{
+    const addItem = (item, quantity)=>{
         if (isInCart(item.id)){
             setCart(cart.map(prod =>
                 prod.id === item.id
@@ -30,7 +33,7 @@ export const CartProvider = ({children})=>{
     // Función para vaciar el carrito
     const clearCart = () => setCart([]);
 
-    // Función para calcular el total de unidades (para el CartWidget)
+    // Función para calcular el total de unidades
     const totalQuantity = () => cart.reduce((acc, prod) => acc + prod.quantity, 0);
 
     // Función para calcular el precio total
