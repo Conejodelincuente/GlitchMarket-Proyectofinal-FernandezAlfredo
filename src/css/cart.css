@@ -91,8 +91,8 @@
 
 .btn-clear {
     background: transparent;
-    border: 1px solid #ff4444;
-    color: #ff4444;
+    border: 1px solid #cdcdcd;
+    color: #cdcdcd;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -100,12 +100,12 @@
 }
 
 .btn-clear:hover {
-    background: #ff4444;
-    color: white;
+    background: #cdcdcd;
+    color: #343434;
 }
 
 .btn-checkout {
-    background: #107c10;
+    background: #00a1f1;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -115,7 +115,7 @@
 }
 
 .btn-checkout:hover {
-    background: #0e6a0e;
+    background: white;
     box-shadow: 0 0 15px rgba(16,124,16,0.5);
 }
 

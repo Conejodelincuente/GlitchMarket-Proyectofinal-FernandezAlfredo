@@ -34,10 +34,10 @@ export const CartProvider = ({children})=>{
     const clearCart = () => setCart([]);
 
     // Función para calcular el total de unidades
-    const totalQuantity = () => cart.reduce((acc, prod) => acc + prod.quantity, 0);
+    const totalQuantity = () => cart.reduce((acumulado, prod) => acumulado + prod.quantity, 0);
 
     // Función para calcular el precio total
-    const totalPrice = () => cart.reduce((acc, prod) => acc + (prod.quantity * prod.price), 0);
+    const totalPrice = () => cart.reduce((acumulado, prod) => acumulado + (prod.quantity * prod.price), 0);
 
     return (
         <CartContext.Provider value={{

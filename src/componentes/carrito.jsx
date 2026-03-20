@@ -25,7 +25,7 @@ return (
                             <h3>{item.title}</h3>
                             <p>{item.platform}</p>
                             <p>Cantidad: {item.quantity}</p>
-                            <p>Subtotal: $ {item.price * item.quantity}</p>
+                            <p>Subtotal: $ {(item.price * item.quantity).toFixed(2)}</p>
                         </div>
                         <button
                             className="btn-remove"
@@ -36,6 +36,14 @@ return (
                     </div>
                 ))}
         </div>
+        <div className="cart-summary">
+                <p>Total de productos: <strong>{totalQuantity()}</strong></p>
+                <p className="cart-total">Total: <strong>$ {totalPrice().toFixed(2)}</strong></p>
+                <div className="cart-actions">
+                    <button onClick={clearCart} className="btn-clear">Vaciar carrito</button>
+                    <Link to="/checkout" className="btn-checkout">Finalizar compra</Link>
+                </div>
+            </div>
     </div>
 );
 
