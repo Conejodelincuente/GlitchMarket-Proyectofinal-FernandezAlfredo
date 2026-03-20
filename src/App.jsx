@@ -6,7 +6,7 @@ import CategoryBar from "./componentes/CategoryBar"
 import { CartProvider } from './context/CartContext';
 import './css/index.css'
 import Cart from './componentes/carrito';
-import Checkout from './componentes/CheckOut';
+import Checkout from './componentes/Checkout';
 
 
 function App() {
